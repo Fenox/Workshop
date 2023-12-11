@@ -3,13 +3,14 @@ package org.example.cocktails;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-
+// TODO: document this class
 @Service
 @RequiredArgsConstructor
 public class CocktailZubereitung {
 
 	private final ZutatenAblage zutatenAblage;
-
+	
+	
 	public Cocktail mix(String name) {
 		// hole cocktail aus Menu
 		var cocktail = Menu.cocktailRezepts.stream().filter(c -> c.getName().equals(name)).findFirst()

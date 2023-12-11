@@ -19,5 +19,4 @@ public class Menu {
 	// TODO: add Whiskey Sour
 
 	public static Set<CocktailRezept> cocktailRezepts = Set.of(mojito);
-
 }
